@@ -106,7 +106,7 @@
         <module>presto-benchmark-driver</module>
         <module>presto-server</module>
         <module>presto-server-rpm</module>
-        <module>presto-docs</module>
+        <!--module>presto-docs</module-->
         <module>presto-verifier</module>
         <module>presto-testing-server-launcher</module>
         <module>presto-plugin-toolkit</module>
@@ -116,6 +116,7 @@
         <module>presto-thrift-testing-server</module>
         <module>presto-thrift-connector</module>
         <module>presto-matching</module>
+        <module>presto-elasticsearch</module>
     </modules>
 
     <dependencyManagement>
@@ -180,6 +181,20 @@
                 <groupId>com.facebook.presto</groupId>
                 <artifactId>presto-hive</artifactId>
                 <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.facebook.presto</groupId>
+                <artifactId>presto-hive-cdh4</artifactId>
+                <version>${project.version}</version>
+                <type>zip</type>
+            </dependency>
+
+            <dependency>
+                <groupId>com.facebook.presto</groupId>
+                <artifactId>presto-elasticsearch</artifactId>
+                <version>${project.version}</version>
+                <type>zip</type>
             </dependency>
 
             <dependency>

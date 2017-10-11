@@ -1,0 +1,30 @@
+{
+    "es_schema1": [
+        {
+            "name": "indicators",
+            "sources": [
+                {
+                    "hostAddress": "192.168.24.10",
+                    "port": 9300,
+                    "clusterName": "xxdirector-services",
+                    "type": "Indicator",
+                    "index":"indicators"
+                }
+            ]
+        }
+    ],
+    "es_schema2": [
+        {
+            "name": "settings",
+            "sources": [
+                {
+                    "hostAddress": "192.168.24.10",
+                    "port": 9300,
+                    "clusterName": "director-servicesxx",
+                    "type": "setting",
+                    "index":"settings"
+                }
+            ]
+        }
+    ]
+}
